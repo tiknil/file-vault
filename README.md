@@ -5,7 +5,7 @@
 We forked the repository due to abandoned state of the project in order to fix some issues we were having:
 
 -   [Fix a S3 bug returning chunk with a different than expected chunk size](https://github.com/soarecostin/file-vault/pull/20)
--   Add Laravel 9, PHP 8 and Flysystem v23 support
+-   Add Laravel 9+, PHP 8 and Flysystem v23 support
 
 Refer to the original repo for the history of opened and closed issues
 
@@ -17,7 +17,7 @@ With this package, you can encrypt and decrypt files of any size in your Laravel
 
 ## Installation and usage
 
-This package requires PHP 7.2 and Laravel 5.8 or higher.
+This package requires PHP 8.0 and Laravel 10 or higher (use a version <= 1.4 for older support)
 
 You can install the original package via composer:
 
@@ -25,18 +25,7 @@ You can install the original package via composer:
 composer require soarecostin/file-vault
 ```
 
-or this fork by adding the reference to the github repo in your composer.json:
-
-```php
-"repositories": [
-    {
-         "type": "vcs",
-         "url": "https://github.com/tiknil/file-vault"
-     }
-],
-```
-
-and then
+or this fork:
 
 ```bash
 composer require tiknil/file-vault
